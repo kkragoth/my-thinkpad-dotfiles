@@ -1,0 +1,4 @@
+map <F1> <Esc>
+imap <F1> <Esc>
+
+so ~/.vim/plugins.vim
