@@ -1,0 +1,7 @@
+{
+    "editor.fontFamily" : "Terminus \\(TTF\\)",
+    "editor.fontSize": 12,
+    "terminal.integrated.fontFamily": "Terminus \\(TTF\\)",
+    "terminal.integrated.fontSize": 12,
+    "workbench.colorTheme": "Ayu Dark",
+}
