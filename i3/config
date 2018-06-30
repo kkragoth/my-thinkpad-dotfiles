@@ -180,3 +180,8 @@ for_window [class="^.*"] border pixel 0
 exec nm-applet
 exec feh --bg-scale /home/kkragoth/Pictures/wall.jpg
 exec pnmixer
+exec setxkbmap pl
+
+smart_gaps on
+gaps inner 5
+gaps outer 10
