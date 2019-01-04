@@ -31,7 +31,7 @@ font pango:Terminus (TTF) 9
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec xfce4-terminal
+bindsym $mod+Return exec gnome-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -172,21 +172,33 @@ bindsym $mod+r mode "resize"
 #	position top
 #}
 
+
+bar {
+    status_command    i3status
+    position          top
+#    mode              hide
+#    tray_output       none
+    
+    colors {
+        background #000000
+        statusline #aaaaaa
+
+        focused_workspace  #ffffff #008000
+        active_workspace   #ffffff #333333
+        inactive_workspace #888888 #222222
+        urgent_workspace   #ffffff #900000
+    }
+}
+
 for_window [class="^.*"] border pixel 0
-#gaps inner all set 20
-#gaps outer current plus 5
 for_window [class="^.*"] border pixel 0
 
-exec polybar example
 exec nm-applet
 exec feh --bg-scale /home/kkragoth/Pictures/wall.jpg
 exec volumeicon
 exec setxkbmap pl
-exec redshift-gtk
-#exec compton --focus-exclude "x = 0 && y = 0 && override_redirect = true"
 exec compton
 
-#smart_gaps on
-gaps inner  5
-gaps outer 7
-
+smart_gaps on
+gaps inner  10
+gaps outer 5
